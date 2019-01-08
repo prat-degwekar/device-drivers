@@ -1,0 +1,50 @@
+/           - root directory
+/bin        - houses binaries
+/sbin       - System Binaries
+/etc        - System level configuration
+/dev        - device nodes
+/proc 
+/var 
+/tmp 
+/usr 
+/home 
+/boot       - boot files
+/lib 
+/opt 
+/mnt 
+/media 
+/srv 
+/usr/bin 
+/usr/local/bin 
+/usr/share/doc 
+/etc/rc.d 
+/usr/man 
+/sys 
+/var/log 
+/var/spool/mail 
+/usr/lib 
+/var/lock 
+/cdrom 
+/lost+found 
+/run 
+/selinux 
+/lib64 
+/cgroup 
+/misc 
+/net 
+/lib/alsa 
+/lib/crda 
+/lib/firmware 
+/lib/i686 
+/lib/kbd 
+/lib/lsb 
+/lib/modules 
+/lib/rtkaio 
+/lib/security 
+/lib/terminfo 
+/lib/udev 
+/dev/block 
+/dev/bsg 
+/dev/cpu 
+/dev/char 
+/dev/dri
