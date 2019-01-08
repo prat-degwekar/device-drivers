@@ -43,8 +43,8 @@
 /lib/security     - PAM library files.
 /lib/terminfo     - Terminfo is a compiled database describing the capabilities of terminals
 /lib/udev         - Udev supplies a dynamic device directory containing only the nodes for devices which are connected to the system.
-/dev/block 
-/dev/bsg 
-/dev/cpu 
-/dev/char 
-/dev/dri
+/dev/block        - Dev files To talk with Block type devices
+/dev/bsg          - Dev Files for the BSG driver
+/dev/cpu          - Dev files for running the CPU
+/dev/char         - Dev files for char handling
+/dev/dri          - Dev files for The Direct Rendering Infrastructure (DRI) is a framework for allowing direct access to graphics hardware.
