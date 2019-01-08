@@ -3,46 +3,46 @@
 /sbin       - System Binaries
 /etc        - System level configuration
 /dev        - device nodes
-/proc 
-/var 
-/tmp 
-/usr 
-/home 
+/proc       - Process Information
+/var        - Variable Files
+/tmp        - Temporary Files
+/usr        - User Programs
+/home       - Home Directories
 /boot       - boot files
-/lib 
-/opt 
-/mnt 
-/media 
-/srv 
-/usr/bin 
-/usr/local/bin 
-/usr/share/doc 
-/etc/rc.d 
-/usr/man 
-/sys 
-/var/log 
-/var/spool/mail 
-/usr/lib 
-/var/lock 
-/cdrom 
-/lost+found 
-/run 
-/selinux 
-/lib64 
-/cgroup 
-/misc 
-/net 
-/lib/alsa 
-/lib/crda 
-/lib/firmware 
-/lib/i686 
-/lib/kbd 
-/lib/lsb 
-/lib/modules 
-/lib/rtkaio 
-/lib/security 
-/lib/terminfo 
-/lib/udev 
+/lib        - System Libraries
+/opt        - Optional add-on Applications
+/mnt        - Mount Directory
+/media      - Removable Media Devices
+/srv        - Service Data
+/usr/bin    - More system binaries.
+/usr/local/bin    - Miscellaneous binaries local to the particular machine.
+/usr/share/doc    - Documentation for installed packages.
+/etc/rc.d         - Boot scripts, on Red Hat and derivative distributions of Linux.
+/usr/man          - The systemwide manpages.
+/sys        - Systemwide device directory. Contains information and statistics about device and device names.
+/var/log          - Systemwide log files.
+/var/spool/mail   - User mail spool.
+/usr/lib          - More systemwide library files.
+/var/lock         - Lock files
+/cdrom            - directory of CD
+/lost+found       - Orphaned files found by fsck
+/run              - Temporary filesystem (volatile) only for currently running processes
+/selinux          - Home of Security Enhanced Linux
+/lib64            - 64-bit libraries 
+/cgroup           - is a collection of processes that are bound to a set of limits or parameters defined via the cgroup filesystem.
+/misc             - Miscellaneous Data
+/net              - Designed to contain nfs shared directories from remote hosts
+/lib/alsa         - Advanced Linux Sound Architecture (ALSA) home
+/lib/crda         - Linux wireless central regulatory domain agent home
+/lib/firmware     - Firmware blobs
+/lib/i686         - 32-bit instruction set libraries home
+/lib/kbd          - Contains various keymaps.
+/lib/lsb          - Linux Standard Base base directory
+/lib/modules      - All loadable kernel modules
+/lib/rtkaio       - RTKAIO library home directory
+/lib/security     - PAM library files.
+/lib/terminfo     - Terminfo is a compiled database describing the capabilities of terminals
+/lib/udev         - Udev supplies a dynamic device directory containing only the nodes for devices which are connected to the system.
 /dev/block 
 /dev/bsg 
 /dev/cpu 
