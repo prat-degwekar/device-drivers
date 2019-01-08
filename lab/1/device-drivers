@@ -1,0 +1,103 @@
+Module                  Size  Used by
+nfnetlink               4296  0 
+bluetooth              98183  0 
+rfkill                 19319  1 bluetooth
+fuse                   80180  0 
+ebtable_nat             2009  0 
+ebtables               18199  1 ebtable_nat
+ipt_MASQUERADE          2338  3 
+iptable_nat             5923  1 
+nf_nat                 22708  2 ipt_MASQUERADE,iptable_nat
+xt_CHECKSUM             1303  1 
+iptable_mangle          3349  1 
+bridge                 85770  0 
+autofs4                27032  3 
+target_core_iblock      9915  0 
+target_core_file        9174  0 
+target_core_pscsi      15980  0 
+target_core_mod       302777  3 target_core_iblock,target_core_file,target_core_pscsi
+configfs               29506  2 target_core_mod
+bnx2fc                 92224  0 
+cnic                   56058  1 bnx2fc
+uio                    10462  1 cnic
+fcoe                   23362  0 
+libfcoe                57623  2 bnx2fc,fcoe
+libfc                 111236  3 bnx2fc,fcoe,libfcoe
+scsi_transport_fc      55395  3 bnx2fc,fcoe,libfc
+scsi_tgt               12141  1 scsi_transport_fc
+8021q                  20507  0 
+garp                    7184  1 8021q
+stp                     2218  2 bridge,garp
+llc                     5450  3 bridge,garp,stp
+cpufreq_ondemand       10544  8 
+acpi_cpufreq            7699  1 
+freq_table              4936  2 cpufreq_ondemand,acpi_cpufreq
+mperf                   1557  1 acpi_cpufreq
+ipt_REJECT              2383  4 
+nf_conntrack_ipv4       9218  6 iptable_nat,nf_nat
+nf_defrag_ipv4          1483  1 nf_conntrack_ipv4
+iptable_filter          2793  1 
+ip_tables              17895  3 iptable_nat,iptable_mangle,iptable_filter
+ip6t_REJECT             4372  2 
+nf_conntrack_ipv6       7985  3 
+nf_defrag_ipv6         26468  1 nf_conntrack_ipv6
+xt_state                1492  6 
+nf_conntrack           79761  6 ipt_MASQUERADE,iptable_nat,nf_nat,nf_conntrack_ipv4,nf_conntrack_ipv6,xt_state
+ip6table_filter         2889  1 
+ip6_tables             18828  1 ip6table_filter
+ipv6                  337436  61 bridge,cnic,ip6t_REJECT,nf_conntrack_ipv6,nf_defrag_ipv6
+vhost_net              29360  0 
+macvtap                10932  1 vhost_net
+macvlan                10356  1 macvtap
+tun                    17094  2 vhost_net
+kvm_intel              59658  0 
+kvm                   348044  1 kvm_intel
+uinput                  8216  0 
+microcode             112864  0 
+iTCO_wdt                7310  0 
+iTCO_vendor_support     3056  1 iTCO_wdt
+sg                     29446  0 
+dcdbas                  8739  0 
+serio_raw               4626  0 
+i2c_i801               13265  0 
+lpc_ich                13571  0 
+mfd_core                1927  1 lpc_ich
+shpchp                 29546  0 
+snd_hda_codec_hdmi     45652  4 
+e1000e                234847  0 
+snd_hda_codec_realtek    73762  1 
+ptp                     9646  1 e1000e
+pps_core               10690  1 ptp
+snd_hda_codec_generic    64484  1 snd_hda_codec_realtek
+snd_hda_intel          57434  3 
+snd_hda_codec         144974  4 snd_hda_codec_hdmi,snd_hda_codec_realtek,snd_hda_codec_generic,snd_hda_intel
+snd_hwdep               7004  1 snd_hda_codec
+snd_seq                61189  0 
+snd_seq_device          7277  1 snd_seq
+snd_pcm                94209  3 snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec
+snd_timer              22843  2 snd_seq,snd_pcm
+snd                    74199  16 snd_hda_codec_hdmi,snd_hda_codec_realtek,snd_hda_codec_generic,snd_hda_intel,snd_hda_codec,snd_hwdep,snd_seq,snd_seq_device,snd_pcm,snd_timer
+soundcore               7990  2 snd_hda_codec,snd
+snd_page_alloc          8856  2 snd_hda_intel,snd_pcm
+ext4                  381616  3 
+jbd2                   93380  1 ext4
+mbcache                 8193  1 ext4
+sr_mod                 15049  0 
+cdrom                  39565  1 sr_mod
+sd_mod                 37190  3 
+crc_t10dif              1209  1 sd_mod
+ahci                   43186  2 
+nouveau              1514531  2 
+ttm                    89568  1 nouveau
+drm_kms_helper        127731  1 nouveau
+drm                   355270  5 nouveau,ttm,drm_kms_helper
+i2c_algo_bit            5903  1 nouveau
+i2c_core               29164  5 i2c_i801,nouveau,drm_kms_helper,drm,i2c_algo_bit
+mxm_wmi                 1967  1 nouveau
+video                  21686  1 nouveau
+output                  2409  1 video
+wmi                     6287  2 nouveau,mxm_wmi
+dm_mirror              14864  0 
+dm_region_hash         12181  1 dm_mirror
+dm_log                  9930  2 dm_mirror,dm_region_hash
+dm_mod                102791  11 dm_mirror,dm_log
